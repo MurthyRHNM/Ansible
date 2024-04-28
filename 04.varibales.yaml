@@ -1,0 +1,6 @@
+- name: variables
+  hosts: localhost
+  tasks:
+  - name: varibales
+    ansible.builtin.debug:
+      msg: "Hi I am learning Ansible from joindevops trainer sivkumar"
