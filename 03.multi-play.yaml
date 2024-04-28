@@ -1,0 +1,12 @@
+- name: display a message
+  hosts: localhost
+  tasks:
+  - name: Play-1 and Task-1
+    ansible.builtin.debug: # it will send a messagae with in server or another server
+      msg: "Hello I am from Play-1 and Task-1"
+- name: Play-2
+  hosts: localhost
+  tasks:
+  - name: Play-2 and task-1
+    ansible.buildin.debug:
+      msg: "Hello I am from paly-2 and task-1"
