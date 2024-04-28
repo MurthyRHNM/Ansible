@@ -1,10 +1,12 @@
 - name: variables
   hosts: localhost
-  vars:
+  vars: # varibales declaration at paly level
     Course: "DevOps"
     institute: "joindevops"
     trainer: "sivakumar"
   tasks:
   - name: varibales
+    vars: # varibale decalration at task level
+      Course: "Terraform"
     ansible.builtin.debug:
       msg: "Hi I am learning {{Course}} from {{institute}} trainer {{trainer}}"

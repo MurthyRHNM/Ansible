@@ -1,6 +1,10 @@
 - name: variables
   hosts: localhost
   tasks:
+  vars: # varibales declaration
+    Course: "DevOps"
+    institute: "joindevops"
+    trainer: "sivakumar"
   - name: varibales
     ansible.builtin.debug:
       msg: "Hi I am learning Ansible from joindevops trainer sivkumar"
