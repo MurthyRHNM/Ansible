@@ -1,8 +1,7 @@
 - name: variables
   hosts: localhost
-  vars: # varibales declaration at paly level
-    var_files:
-    - vars.yaml
+  var_files:
+  - vars.yaml
   tasks:
   - name: varibales
     ansible.builtin.debug:
