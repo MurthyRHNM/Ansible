@@ -1,7 +1,7 @@
 - name: variables
   hosts: localhost
-  vars: # varibales declaration at paly level
+  vars:
   tasks:
-  - name: variables
+  - name: print information
     ansible.builtin.debug:
-      msg: "Hi I am learning {{Course}} from {{institute}} trainer {{trainer}}"
+      msg: " Hi I am learning {{Course}} from {{institute}} trainer {{trainer}}"
