@@ -5,7 +5,7 @@
     institute: "joindevops"
     trainer: "sivakumar"
   tasks:
-  - name: varibales
+  - name: variables
     vars: # varibale decalration at task level
       Course: "Terraform"
     ansible.builtin.debug:

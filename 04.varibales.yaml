@@ -5,6 +5,6 @@
     Course: "DevOps"
     institute: "joindevops"
     trainer: "sivakumar"
-  - name: varibales
+  - name: variables
     ansible.builtin.debug:
       msg: "Hi I am learning Ansible from joindevops trainer sivkumar"

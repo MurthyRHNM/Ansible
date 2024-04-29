@@ -2,6 +2,6 @@
   hosts: localhost
   vars: # varibales declaration at paly level
   tasks:
-  - name: varibales
+  - name: variables
     ansible.builtin.debug:
       msg: "Hi I am learning {{Course}} from {{institute}} trainer {{trainer}}"
