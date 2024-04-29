@@ -1,11 +1,10 @@
-- name: Conditions
+- name: conditions
   hosts: localhost
-  become: yes
+  become: true
   tasks:
-  - name: check user exist
+  - name: check user exit or not
     ansible.builtin.command: id expense
-    register: USER
-    ignore_error: true
-  - name: display msg
+  
+  - name: print message
     ansible.builtin.debug:
       msg: "Hello"
