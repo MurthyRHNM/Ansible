@@ -1,9 +1,9 @@
 - name: Conditions
   hosts: localhost
   vars_prompt:
-    name: Please enter number
-    prompt: number
-    Private: false
+  - name: number 
+    prompt: please enter the number
+    private: false
   tasks:
   - name: given number is greater than or not
     ansible.builtin.debug:
