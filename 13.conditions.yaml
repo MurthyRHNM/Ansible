@@ -8,3 +8,4 @@
   - name: given number is greater than or not
     ansible.builtin.debug:
       msg: "Given number is {{number}} greater than 10"
+      when: number >10
