@@ -4,11 +4,11 @@
   tasks:
   - name: check user exist or not
     ansible.builtin.command: id expense
-    register: USER    # it will store the error 
-    ignore_errors: true
+    register: USER    # it will store the exit status success or error 
+    ignore_errors: true # it will ignore if before command is get error
   - name: user not exist add user
     ansible.builtin.command: useradd expense
-    when: USER.rc !=0
+    when: USER.rc !=0 # Condition
   
   - name: print message
     ansible.builtin.debug:
