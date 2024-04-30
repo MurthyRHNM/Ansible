@@ -8,4 +8,4 @@
   - name: given number is greater than or not
     ansible.builtin.debug:
       msg: "Given number is {{number}} greater than 10"
-      when: number >10
+      when: number | int >10 # by default ansible consider number/string as a string |(pipe symbol) translate into integer and not need to use {{}} to declare varibale in when condition
