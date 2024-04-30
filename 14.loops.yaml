@@ -1,0 +1,11 @@
+- name: loops
+  hosts: localhost 
+  tasks:
+  - name: display list of course
+    ansible.builtin.debug:
+      msg: "list of course : {{item}}
+    loop:
+    - Linux
+    - shell
+    - AWs
+      
