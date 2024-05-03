@@ -4,8 +4,8 @@
   tasks:
   - name: check user exist or not
     ansible.builtin.command: id expense
-    register: USER    # it will store the exit status success or error 
-    ignore_errors: true # it will ignore if before command is get error
+    register: USER    # it will store the  current task status success or error 
+    ignore_errors: true # it will ignore if current task command is get error
 
   - name: store error message
     ansible.builtin.debug:

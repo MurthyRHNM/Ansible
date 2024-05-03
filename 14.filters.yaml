@@ -3,7 +3,7 @@
   tasks:
   - name: print default value
     ansible.builtin.debug:
-      msg: "Hello {{course | default('Ansible') }}"
+      msg: "Hello {{course | default('Ansible') }}" # if we not declare variable in any file or playbook it will take this as default
 
 - name: upper case
   hosts: localhost
