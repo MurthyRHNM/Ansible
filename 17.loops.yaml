@@ -1,0 +1,12 @@
+- name: loops
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.dnf:
+      name: "{{ item.key }}"
+      state: "{{ item.value }}"
+    loop:
+    - {'key': 'mysql', 'value': 'absent'}
+    - {'key': 'git', 'value': 'latest'}
+    - {'key': 'postfix', 'value': 'absent'}
