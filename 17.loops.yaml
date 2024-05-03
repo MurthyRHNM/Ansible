@@ -4,9 +4,9 @@
   tasks:
   - name: install packages
     ansible.builtin.dnf:
-      name: "{{ item.key }}"
-      state: "{{ item.value }}"
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
-    - {'key': 'mysql', 'value': 'absent'}
-    - {'key': 'git', 'value': 'latest'}
-    - {'key': 'postfix', 'value': 'absent'}
+    - {'name': 'mysql', 'state': 'absent'}
+    - {'name': 'git', 'state': 'latest'}
+    - {'name': 'postfix', 'state': 'absent'}
