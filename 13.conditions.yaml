@@ -7,7 +7,7 @@
   tasks:
   - name: given number is greater than or not
     ansible.builtin.debug:
-      msg: "Given number is {{number}} greater than 10"
+      msg: "Given number is {{number}} greater than or eual to 10"
     # by default ansible consider number/string as a string if we give through user prompt |(pipe symbol) translate into integer and not need to use {{}} to declare varibale in when condition
     when: number | int >10  # 'number' is variable
     
